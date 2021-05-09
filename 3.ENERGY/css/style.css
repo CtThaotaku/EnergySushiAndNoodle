@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.offset::before {
+  height: 3.9rem;
+  margin-top: -3.8rem;
+  content: "";
+  display: block;
+}
+
+/*============================== Navbar style ==============================*/
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+  height: 5rem;
+}
+.navbar-nav li {
+  padding-right: 0.1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: goldenrod;
+}
+
+.onlinegloriafood {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.onlinegloriafood:hover {
+  background-color: goldenrod;
+  border-width: medium;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.callUS {
+  margin: 0 1rem 0 0;
+}
+
+/*==============================Slider ==============================*/
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.carousel-caption h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 4rem;
+  color: gainsboro;
+  text-shadow: 0.1rem 0.1rem 0.8rem white;
+  padding-bottom: 0;
+  margin-top: -10%;
+}
+
+.carousel-caption h3 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 10rem;
+  color: black;
+  text-shadow: 0.1rem 0.1rem 0.5rem white;
+  padding-bottom: 1.6rem;
+}
+.carousel-item .btn-lg {
+  color: black;
+  border-width: large;
+  border-radius: 0;
+  font-size: 1.5rem;
+  border-color: black;
+}
+.logoonSlide {
+  width: 700px;
+  margin: 0;
+}
+.animate__animated.animate__zoomInDown {
+  --animate-duration: 2s;
+}
+/******* Button in slide*********/
+.carousel-inner .onlinegloriafood {
+  background-color: goldenrod;
+  border-width: medium;
+  border-radius: 0rem;
+  font-size: 1.5rem;
+}
+
+.carousel-inner .onlinegloriafood:hover {
+  font: bold;
+  background-color: white;
+  border-width: medium;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+/*============================== Menu SECTION ==============================*/
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.jumbotron {
+  border-radius: 0;
+  padding: 1rem 0 2rem;
+}
+h3.heading {
+  font-family: "Permanent Marker", cursive;
+  font-size: 4rem;
+  color: black;
+  text-shadow: 0.1rem 0.1rem 0.5rem goldenrod;
+  padding-bottom: 1.6rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 0.5rem;
+}
+
+/*=================================gallery ================================*/
+.menu img {
+  max-width: 100%;
+
+  transition: transform 0.5s ease;
+}
+.row.no-padding [class*="col-"] {
+  padding: 0;
+}
+.menu img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+.menu {
+  overflow: hidden;
+}
+
+#gallery h3 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.5rem goldenrod;
+  padding-bottom: 0;
+}
+
+#gallery {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 20vh;
+  background-color: #000;
+}
+
+#gallery.offset {
+  margin-bottom: 0;
+}
+
+/*============================== Contact ==============================*/
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+
+footer img {
+  height: 10rem;
+  margin-bottom: -5%;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 3.5rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3;
+}
+hr.socket {
+  border-top: 0.2rem solid #666b71;
+  width: 100%;
+}
+
+h3.heading-contact {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
+  text-decoration: underline overline;
+}
+
+#contact {
+  font-size: 0.8rem;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/*==============================Media Quries for iPad Pro==============================*/
+
+@media (max-width: 767px) {
+  .navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+  .onlinegloriafood {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 0.8rem;
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+    margin-top: -40%;
+  }
+  .carousel-caption h3 {
+    font-size: 4rem;
+  }
+  .logoonSlide {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .callUS {
+    margin: 0 0.5rem 0 -1rem;
+  }
+  #contact {
+    font-size: 1rem;
+  }
+}
+
+/*========================================= For Ipad  768px==========================*/
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+  .onlinegloriafood {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 0.8rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+    margin-top: -30%;
+  }
+  .carousel-caption h3 {
+    font-size: 6rem;
+  }
+  .logoonSlide {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .callUS {
+    margin: 0 0.5rem 0 -1rem;
+  }
+  #contact {
+    font-size: 1.1rem;
+  }
+  h3.heading-contact {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h3.heading-contact {
+    font-size: 2rem;
+  }
+  #contact {
+    font-size: 1.5rem;
+  }
+}
+/*==============================Media Quries ==============================*/
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
